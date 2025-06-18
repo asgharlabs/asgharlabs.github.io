@@ -46,9 +46,9 @@ const config = {
 			"docusaurus-plugin-remote-content",
             {
                 // options here
-                name: "github-terraform", // used by CLI, must be path safe
-                sourceBaseUrl: "https://raw.githubusercontent.com/asgharlabs/github-terraform/refs/heads/master", // the base url for the markdown (gets prepended to all of the documents when fetching)
-                outDir: "docs/github-terraform/", // the base directory to output to.
+                name: "llm-d", // used by CLI, must be path safe
+                sourceBaseUrl: "https://raw.githubusercontent.com/llm-d/llm-d/refs/heads/dev/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+                outDir: "docs/llm-d/", // the base directory to output to.
                 documents: ["README.md"], // the file names to download
             },
 		],
@@ -56,22 +56,82 @@ const config = {
 			"docusaurus-plugin-remote-content",
             {
                 // options here
-                name: "vcenter-packer-ansible-inspec", // used by CLI, must be path safe
-                sourceBaseUrl: "https://raw.githubusercontent.com/asgharlabs/vcenter-packer-ansible-inspec/refs/heads/master", // the base url for the markdown (gets prepended to all of the documents when fetching)
-                outDir: "docs/vcenter-packer-ansible-inspec/", // the base directory to output to.
+                name: "llm-d-benchmark", // used by CLI, must be path safe
+                sourceBaseUrl: "https://raw.githubusercontent.com/llm-d/llm-d-benchmark/refs/heads/main/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+                outDir: "docs/llm-d-benchmark/", // the base directory to output to.
                 documents: ["README.md"], // the file names to download
             },
 		],
-		// [
-		// 	"docusaurus-plugin-remote-content",
-            // {
-                // // options here
-                // name: "asgharlabs-debian10", // used by CLI, must be path safe
-                // sourceBaseUrl: "https://raw.githubusercontent.com/asgharlabs/asgharlabs-debian10/refs/heads/master/", // the base url for the markdown (gets prepended to all of the documents when fetching)
-                // outDir: "docs", // the base directory to output to.
-                // documents: ["README.md"], // the file names to download
-            // },
-		// ],
+		[
+			"docusaurus-plugin-remote-content",
+            {
+                // options here
+                name: "llm-d-inference-scheduler", // used by CLI, must be path safe
+                sourceBaseUrl: "https://raw.githubusercontent.com/llm-d/llm-d-inference-scheduler/refs/heads/main/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+                outDir: "docs/llm-d-inference-scheduler/", // the base directory to output to.
+                documents: ["README.md"], // the file names to download
+            },
+		],
+		[
+			"docusaurus-plugin-remote-content",
+            {
+                // options here
+                name: "llm-d-inference-sim", // used by CLI, must be path safe
+                sourceBaseUrl: "https://raw.githubusercontent.com/llm-d/llm-d-inference-sim/refs/heads/main/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+                outDir: "docs/llm-d-inference-sim/", // the base directory to output to.
+                documents: ["README.md"], // the file names to download
+            },
+		],
+		[
+			"docusaurus-plugin-remote-content",
+            {
+                // options here
+                name: "llm-d-kv-cache-manager", // used by CLI, must be path safe
+                sourceBaseUrl: "https://raw.githubusercontent.com/llm-d/llm-d-kv-cache-manager/refs/heads/main/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+                outDir: "docs/llm-d-kv-cache-manager/", // the base directory to output to.
+                documents: ["README.md"], // the file names to download
+            },
+		],
+		[
+			"docusaurus-plugin-remote-content",
+            {
+                // options here
+                name: "llm-d-deployer", // used by CLI, must be path safe
+                sourceBaseUrl: "https://raw.githubusercontent.com/llm-d/llm-d-deployer/refs/heads/main/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+                outDir: "docs/llm-d-deployer/", // the base directory to output to.
+                documents: ["README.md"], // the file names to download
+            },
+		],
+		[
+			"docusaurus-plugin-remote-content",
+            {
+                // options here
+                name: "llm-d-model-service", // used by CLI, must be path safe
+                sourceBaseUrl: "https://raw.githubusercontent.com/llm-d/llm-d-model-service/refs/heads/main/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+                outDir: "docs/llm-d-model-service/", // the base directory to output to.
+                documents: ["README.md"], // the file names to download
+            },
+		],
+		[
+			"docusaurus-plugin-remote-content",
+            {
+                // options here
+                name: "llm-d-routing-sidecar", // used by CLI, must be path safe
+                sourceBaseUrl: "https://raw.githubusercontent.com/llm-d/llm-d-routing-sidecar/refs/heads/main/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+                outDir: "docs/llm-d-routing-sidecar/", // the base directory to output to.
+                documents: ["README.md"], // the file names to download
+            },
+		],
+		[
+			"docusaurus-plugin-remote-content",
+            {
+                // options here
+                name: "llm-d-pd-utils", // used by CLI, must be path safe
+                sourceBaseUrl: "https://raw.githubusercontent.com/llm-d/llm-d-pd-utils/refs/heads/main/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+                outDir: "docs/llm-d-pd-utils/", // the base directory to output to.
+                documents: ["README.md"], // the file names to download
+            },
+		],
 	],
 
   presets: [
