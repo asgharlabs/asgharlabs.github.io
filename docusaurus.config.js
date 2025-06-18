@@ -20,7 +20,7 @@ const config = {
   },
 
   // Set the production url of your site here
-	url: 'https://asgharlabs.github.io',
+	url: 'https://asgharlabs.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -30,7 +30,7 @@ const config = {
   organizationName: 'asgharlabs', // Usually your GitHub org/user name.
   projectName: 'asgharlabs.github.io', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -40,6 +40,39 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+	plugins: [
+		[
+			"docusaurus-plugin-remote-content",
+            {
+                // options here
+                name: "github-terraform", // used by CLI, must be path safe
+                sourceBaseUrl: "https://raw.githubusercontent.com/asgharlabs/github-terraform/refs/heads/master", // the base url for the markdown (gets prepended to all of the documents when fetching)
+                outDir: "docs/github-terraform/", // the base directory to output to.
+                documents: ["README.md"], // the file names to download
+            },
+		],
+		[
+			"docusaurus-plugin-remote-content",
+            {
+                // options here
+                name: "vcenter-packer-ansible-inspec", // used by CLI, must be path safe
+                sourceBaseUrl: "https://raw.githubusercontent.com/asgharlabs/vcenter-packer-ansible-inspec/refs/heads/master", // the base url for the markdown (gets prepended to all of the documents when fetching)
+                outDir: "docs/vcenter-packer-ansible-inspec/", // the base directory to output to.
+                documents: ["README.md"], // the file names to download
+            },
+		],
+		// [
+		// 	"docusaurus-plugin-remote-content",
+            // {
+                // // options here
+                // name: "asgharlabs-debian10", // used by CLI, must be path safe
+                // sourceBaseUrl: "https://raw.githubusercontent.com/asgharlabs/asgharlabs-debian10/refs/heads/master/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+                // outDir: "docs", // the base directory to output to.
+                // documents: ["README.md"], // the file names to download
+            // },
+		// ],
+	],
 
   presets: [
     [
